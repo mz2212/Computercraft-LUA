@@ -1,0 +1,15 @@
+--It's a simple treechopper
+function chop()
+  while turtle.detect() == true do
+    turtle.dig()
+    turtle.digUp()
+    turtle.up()
+  end
+end
+function decend()
+  while turtle.detectDown() == false do
+    turtle.down()
+  end
+end
+chop()
+decend()
